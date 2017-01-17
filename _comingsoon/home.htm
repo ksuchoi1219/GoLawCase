@@ -1,0 +1,23 @@
+<%
+if (instr(lcase(request.servervariables("server_name")),"www.golawcase") = 0) then
+	Response.Status="301 Moved Permanently"
+	Response.AddHeader "Location","http://www.golawcase.com"
+end if
+%>
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<title>GO LAW CASE</title>
+</head>
+
+<body style="margin:0px;" width="100%" height="100%" bgcolor="#3d4c4d">
+
+<table cellspacing="0" width="100%" height="100%" style="margin:0px;">
+	<tr>
+		<td valign="top"><img src="/comingsoon.png" width="100%"></td>
+	</tr>
+</table>
+
+</body>
+
+</html>

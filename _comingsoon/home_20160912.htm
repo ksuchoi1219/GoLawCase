@@ -1,0 +1,29 @@
+<%
+if (instr(lcase(request.servervariables("server_name")),"www.mycasematrix") = 0) then
+	Response.Status="301 Moved Permanently"
+	Response.AddHeader "Location","http://www.mycasematrix.com"
+end if
+%>
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<title>MY CASE MATRIX</title>
+</head>
+
+<body style="margin:0px;" width="100%" height="100%">
+
+<table cellspacing="0" width="100%" height="100%" style="margin:0px; background:url('/bg.jpg'); background-repeat:no-repeat; background-position:center; background-size:cover;">
+	<tr>
+		<td align="center">
+			<b style="font-size:50px; color:#000066;">MY CASE MATRIX</b><br>
+			<br>
+			<b style="font-size:30px; color:#000066;">COMING SOON</b><br>
+			<br>
+			<b style="font-size:20px; color:#3A3A2F;">By ThanksMatrix</b>
+		</td>
+	</tr>
+</table>
+
+</body>
+
+</html>
